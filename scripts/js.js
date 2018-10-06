@@ -1,5 +1,3 @@
-console.log('ayy' + ' ' + 'lmao'); 
-
 window.onload = greeting;
 
 function greeting() {
