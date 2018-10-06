@@ -42,5 +42,5 @@ function greeting() {
         detail, screenX, screenY, clientX, clientY,
         ctrlKey, altKey, shiftKey, metaKey,
         button, relatedTarget);
-    document.getElementsByClassName('searchbox')[0].dispatchEvent(evt);
+    document.getElementById('searchboxid').dispatchEvent(evt);
 }
