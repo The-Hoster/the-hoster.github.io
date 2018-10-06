@@ -37,5 +37,10 @@ function greeting() {
         greeting = 'Good Evening!';
 
     document.getElementById('greet').innerHTML = greeting;
-    document.getElementsByClassName('searchbox')[0].focus().click();
+    var evt = document.createEvent("MouseEvents");
+    evt.initMouseEvent("click", canBubble, cancelable, view,
+        detail, screenX, screenY, clientX, clientY,
+        ctrlKey, altKey, shiftKey, metaKey,
+        button, relatedTarget);
+    document.getElementsByClassName('searchbox')[0].dispatchEvent(evt);
 }
