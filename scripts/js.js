@@ -36,11 +36,12 @@ function greeting() {
     else if (hrs >= 17 && hrs <= 24)
         greeting = 'Good Evening!';
 
-    document.getElementById('greet').innerHTML = greeting;
-    var evt = document.createEvent("MouseEvents");
-    evt.initMouseEvent("click", canBubble, cancelable, view,
-        detail, screenX, screenY, clientX, clientY,
-        ctrlKey, altKey, shiftKey, metaKey,
-        button, relatedTarget);
+    var evt = new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        clientX: 20,
+        /* whatever properties you want to give it */
+    });
     document.getElementById('searchboxid').dispatchEvent(evt);
 }
