@@ -37,5 +37,5 @@ function greeting() {
         greeting = 'Good Evening!';
 
     document.getElementById('greet').innerHTML = greeting;
-    document.getElementsByClass('searchbox')[0].focus().click();
+    document.getElementsByClassName('searchbox')[0].focus().click();
 }
