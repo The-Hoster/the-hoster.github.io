@@ -37,6 +37,4 @@ function greeting() {
         greeting = 'Good Afternoon!';
     else if (hrs >= 17 && hrs <= 24)
         greeting = 'Good Evening!';
-
-    document.getElementById("searchboxid").focus().click().prompt();
 }
