@@ -22,7 +22,7 @@ function time() {
   document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
   t = setTimeout(function() {
     time()
-  }, 500);
+  }, 250);
 }
 time();
 
