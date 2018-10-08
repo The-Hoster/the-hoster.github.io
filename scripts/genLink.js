@@ -37,4 +37,4 @@ function genLink() {
 	
 }
 
-window.onLoad = function() {document.getElementById("YTMIX").href = genLink();}
+window.onload = function() {document.getElementById("YTMIX").href = genLink();}
