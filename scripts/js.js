@@ -39,4 +39,5 @@ function greeting() {
         greeting = 'Good Evening!';
     
     document.getElementById('greet').innerHTML = greeting;
+    document.getElementById("YTMIX").href = genLink();
 }
