@@ -33,6 +33,7 @@ function genLink() {
 		vids.splice(rndmNumber,1);
 	}	
 	listLink=listLink+extractVideoID(vids[0]);
+	console.log(listLink);
 	return listLink;
 	
 }
